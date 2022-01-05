@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+	
+
+/* Buttons */
+.wds-button {
+background-color:#00cdd0;
+border-color:#00cdd0;
+color:#000;
+-ms-flex-align:center;
+align-items:center;
+border-style:solid;
+border-width:1px;
+box-sizing:content-box;
+cursor:default;
+display:-ms-inline-flexbox;
+display:inline-flex;
+font-size:12px;
+font-weight:600;
+-ms-flex-pack:center;
+justify-content:center;
+letter-spacing:.15px;
+line-height:16px;
+margin:0;
+min-height:18px;
+outline:0;
+padding:7px 18px;
+text-decoration:none;
+text-transform:uppercase;
+transition-duration:.3s;
+transition-property:background-color,border-color,color;
+vertical-align:top;
+-webkit-appearance:none;
+border-radius:4px;
+background-image:none; /* Supress Gradient set by buttons */
+text-shadow:none; /* Disable Embolding caused by the update */
+}
+
+.wds-button.wds-is-active,.wds-button:active,.wds-button:focus:not(:disabled),.wds-button:hover:not(:disabled){
+background-color:#00686a;
+border-color:#00686a;
+text-decoration:none;
+background-image:none; /* Supress Gradient set by buttons */
+}
+
+.wds-button.wds-is-secondary{
+background-color:transparent;
+border-color:#5f7a7b;
+color:#5f7a7b
+}
+.wds-button.wds-is-secondary.wds-is-active,.wds-button.wds-is-secondary:active,.wds-button.wds-is-secondary:focus:not(:disabled),.wds-button.wds-is-secondary:hover:not(:disabled){
+background-color:transparent;
+border-color:#00686a;
+color:#00686a;
+}
+.wds-button.wds-is-text{
+background-color:transparent;
+color:#5f7a7b;
+border:0
+}
+
+
+.wds-button.wds-is-text.wds-is-active,.wds-button.wds-is-text:active,.wds-button.wds-is-text:focus:not(:disabled),.wds-button.wds-is-text:hover:not(:disabled){
+background-color:transparent;
+color:#00686a}
+
+.wds-button.wds-is-secondary.wds-is-light, .wds-button.wds-is-text.wds-is-light {
+	filter:inver(1) hue-rotate(180deg);
+}
+
+a.wds-button, button.wds-button {
+	cursor:pointer;
+}
+
+	html {
+		max-width:960px;	
+		margin:0 auto;
+		scrollbar-width:none;
+	}
+	
+::-webkit-scrollbar {
+		dispaly:none;
+		width:0;
+		height:0;
+	}
+
+	body {
+		font-weight:500;
+		word-spacing:-0.5px;	
+		margin:0 auto;	
+		font-size:14px;
+		position:relative;
+		max-width:inherit;
+		box-shadow:0 0 40px 0px;
+		overflow:hidden;
+		font-family:Inter, fantasy;
+	}
+	
+	main {
+		background-color:#d8d9e0;
+		margin:0 auto;
+		max-width:inherit;
+		position:relative;
+		overflow-y:auto;
+		height:100vh;
+		scrollbar-width:none;
+		-ms-overflow-style:none;
+		-webkit-transition:background-color 400ms ease;
+		transition:background-color 400ms ease;
+/*
+		display:table-cell;
+*/
+		width:960px;
+		height:100vh;
+		text-align:center;
+		font-size:20px;
+		box-shadow:0 0 20px 10px yellow inset, 0 0 10px 5px black inset;
+		padding:20px;
+		text-shadow:0 2px 2px white, 2px 0 2px white, 1px 1px white;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		box-sizing:border-box;
+	}
+	.icons {
+		margin:5px 0;
+	}
+	.icons svg {
+		margin:0 5px;
+		width:80px;
+		height:80px;
+		color:#070714;
+	}
+</style>
+<title>Q.Qore is undergoing upgrade</title>
+<body>
+<main>
+<div style="margin:0 auto;">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="193.046275" height="215.254444" viewBox="0,0,386.09255,430.50888"><g transform="translate(-34.99546,29.55)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M239.2,-29.4c57.6,1.6 105.4,24.9 141.5,68.9c17.8,21.6 30,48.3 36.4,79.5c2.9,14 3.7,44.6 1.5,60.3c-4.1,29.2 -15,58.4 -30.5,81.7c-3.1,4.7 -5.9,9 -6.3,9.6c-0.5,0.7 5.4,8.9 14.8,20.5c8.5,10.7 16.8,22.1 18.4,25.4c8.2,16.7 8.1,35.4 -0.2,52.5c-4.3,8.9 -16.8,21.4 -25.9,25.8c-16.4,7.9 -35.6,8.2 -52,0.9c-10.8,-4.8 -16.8,-10.5 -34.4,-32.3c-9.3,-11.5 -16.9,-21 -16.9,-21.1c-0.1,0 -3.5,1 -7.6,2.3c-11.8,3.9 -30.3,7.2 -45.5,8.3c-35,2.4 -68.1,-4.3 -98.7,-20.1c-54.4,-27.9 -89.6,-78.5 -97.9,-140.5c-1.9,-14.8 -0.7,-44.8 2.6,-60.3c8.1,-38.7 25.4,-71.4 53,-99.9c35,-36.2 74.9,-55.2 129.5,-61.5c1.9,-0.2 10.1,-0.2 18.2,0zM236,104.1c-17,0.2 -31.9,6.7 -45.1,19.9c-7.1,7 -9.4,10.1 -13.3,18c-7.8,15.9 -9.3,30.3 -4.7,44.6l1.9,5.9l0.1,-7.5c0.3,-15.4 5.8,-29.3 16,-40.2c18.1,-19.4 46.4,-24.2 71,-12.1c5.8,2.9 9.5,5.7 15.9,12.1c8.9,9.1 9.1,9 6.7,-2.1c-3.9,-18.4 -17.2,-32.5 -35.2,-37.2c-3.1,-0.8 -9.1,-1.5 -13.3,-1.4z"/></g></g></svg>
+</div>
+<div>
+Q.Qore is undergoing an upgrade
+<br>
+Currently, Q.Qore is going to upgrade its Servelution Core from 2.1.0 (Vibranium) to 2.3.0 (Iron)
+<br>
+Because of this, you cannot access Q.Qore until the upgrade has been succesfully completed. Thanks for your patience!
+<br>
+In the meantime, if your wiki has MediaWiki 1.36 or newer, you may be interested to apply evelution by downloading it. Otherwise, you may try a live instance, both are in the bottom links:
+</div>
+<div>
+	<a href="https://skins-demo.wmflabs.org/?useskin=evelution" title="Useful if you want to give it a shot or you don't have a MediaWiki 1.36+ wiki" class="wds-button">Try Evelution</a>
+	<a href="https://github.com/AWikia/SkinEvelution/" title="I have a MediaWiki 1.36+ wiki and I want to use it on my wiki." class="wds-button">Download Evelution</a>
+</div>
+<div>
+Once the upgrade is complete, you can access Q.Qore again!
+</div>
+
+</main>
+
+<meta name="viewport" content="width=960px user-scalable=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"> 
+</body>
